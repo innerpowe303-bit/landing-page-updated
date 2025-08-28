@@ -1,0 +1,316 @@
+!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+<h1>Inner Power — Mentor Bharat</h1>
+<p style="font-weight:600;color:#165b5e">Awaken your Inner Power • Heal • Manifest • Transform</p>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#2f9e44;   /* healing green */
+      --accent-2:#60a5fa; /* soft blue */
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#fbfbfc;
+      --glass: rgba(255,255,255,0.75);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Poppins", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #fbfbfc 0%, #f6fbf9 100%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* HERO */
+    .hero{
+      min-height: 78vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:60px 18px;
+      background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
+      position:relative;
+    }
+    .hero-card{
+      max-width:1100px;
+      width:100%;
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:28px;
+      backdrop-filter: blur(6px);
+      background:var(--glass);
+      border-radius:14px;
+      padding:28px;
+      box-shadow: 0 20px 40px rgba(15,23,42,0.12);
+      align-items:center;
+      animation:pop 700ms ease;
+    }
+    @keyframes pop{ from{transform:translateY(10px);opacity:0} to{transform:none;opacity:1} }
+
+    .hero-left h1{
+      font-size:28px;
+      margin:0 0 10px;
+      line-height:1.05;
+      color:#07203a;
+    }
+    .hero-left p.lead{
+      margin:8px 0 18px;
+      color:#0b1220;
+      font-size:16px;
+    }
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+    .badge{background:linear-gradient(90deg,var(--accent),#66d9a3);color:white;padding:6px 12px;border-radius:999px;font-weight:600;font-size:13px;box-shadow:0 6px 14px rgba(47,158,68,0.12)}
+
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#3ecf8e);color:#04111b;padding:12px 18px;border-radius:999px;border:none;font-weight:700;cursor:pointer;text-decoration:none;box-shadow:0 10px 30px rgba(47,158,68,0.12)}
+    .btn-outline{background:transparent;color:#07203a;padding:10px 16px;border-radius:999px;border:2px solid rgba(7,32,58,0.06);text-decoration:none}
+
+    /* right card */
+    .hero-right{background:linear-gradient(180deg,#ffffff, #fbfbfb);padding:18px;border-radius:12px;}
+    .mentor-row{display:flex;gap:12px;align-items:center}
+    .mentor-photo{width:76px;height:76px;border-radius:12px;object-fit:cover;box-shadow:0 8px 24px rgba(7,32,58,0.07)}
+    .mentor-meta h4{margin:0;font-size:16px}
+    .mentor-meta p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+    .features{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .pill{background:#f1fbf8;border-radius:12px;padding:8px 10px;font-size:13px;color:#0b5a46}
+
+    /* sections */
+    .section{padding:48px 18px;}
+    .container{max-width:1100px;margin:0 auto}
+
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow: 0 10px 26px rgba(15,23,42,0.06)}
+
+    h2.section-title{color: #044b6d;margin-bottom:14px}
+
+    /* testimonials */
+    .testi{background:linear-gradient(180deg,#fff,#fbfffc);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(7,18,30,0.04)}
+
+    /* FAQ */
+    details{background:white;padding:12px;border-radius:10px;margin-bottom:10px}
+    summary{font-weight:600;cursor:pointer}
+
+    /* CTA big */
+    .cta-hero{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .big-cta{background:linear-gradient(90deg,var(--accent-2),#7dd3fc);color:#012035;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none;box-shadow:0 14px 40px rgba(96,165,250,0.12)}
+
+    footer{padding:26px 18px;background:#042a2b;color:#d6f6f4;text-align:center}
+
+    /* responsive */
+    @media(max-width:980px){
+      .hero-card{grid-template-columns:1fr; padding:20px}
+      .hero-right{order:2}
+    }
+  </style>
+</head>
+<body>
+<div class="hero-right">
+  <img src="mentor.jpg" alt="Mentor Bharat" />
+</div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-card container" role="region">
+      <div class="hero-left">
+        <div class="badges">
+          <div class="badge">5-Day Kickstart</div>
+          <div class="badge">Marathi + Hindi</div>
+        </div>
+
+        <h1>मन मोकळं करा — आत्तापासून बदल सुरू करा<br><small style="font-weight:600;color:#165b5e">Awaken your Inner Power • Heal • Manifest • Transform</small></h1>
+
+        <p class="lead">तुम्ही stressed आहात का? नात्यात distance आहे का? पैसे आणि करिअर मध्ये अडथळे येतात का?  
+          मी तुम्हाला साध्या, heartfelt व practical टूल्स देतो — ज्यामुळे तुम्ही झपाट्याने हलके आणि स्पष्ट वाटायला सुरुवात कराल.</p>
+
+        <div class="cta-row">
+          <a class="btn-primary" href="https://wa.me/91XXXXXXXXXX" target="_blank" id="whatsappBtn">📲 माझं Free Session Book करा</a>
+          <a class="btn-outline" href="#curriculum">5-Day Plan बघा | See 5-Day Plan</a>
+        </div>
+
+        <div style="margin-top:14px;color:var(--muted);font-size:13px">
+          Early bird: <strong>₹699</strong> — First 20 spots. Full program: ₹999.
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="mentor-row">
+          <img class="mentor-photo" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Mentor Bharat">
+          <div class="mentor-meta">
+            <h4>Mentor Bharat</h4>
+            <p>Emotional Healer • Life Mentor</p>
+            <div style="font-size:12px;color:var(--muted);margin-top:6px">Ho'oponopono | EFT | Manifestation</div>
+          </div>
+        </div>
+
+        <div class="features" aria-hidden="true">
+          <div class="pill">Live Q&A</div>
+          <div class="pill">Voice Guides</div>
+          <div class="pill">Workbook PDF</div>
+        </div>
+
+        <div style="margin-top:14px">
+          <div style="font-size:13px;color:var(--muted)">Special launch price</div>
+          <div style="font-weight:800;font-size:20px">₹999 <span style="font-size:13px;color:var(--muted);text-decoration:line-through;margin-left:8px">₹1499</span></div>
+          <div style="margin-top:10px"><a class="btn-primary" href="#contact">Reserve Your Spot</a></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">About — Mentor Bharat</h2>
+      <div class="grid-3">
+        <div class="card">
+          <p style="font-weight:600">मी कोण आहे?</p>
+          <p>मी भरत — एक Life Mentor आणि Emotional Healer. माझं काम आहे तुम्हाला तुमच्या जखमांपासून मुक्त करणं आणि शांतता आणणं, ज्यामुळे तुम्ही पुन्हा शक्तीने पुढे जाल.</p>
+        </div>
+        <div class="card">
+          <p style="font-weight:600">मी कसं मदत करतो?</p>
+          <p>मी साध्या Ho'oponopono, EFT आणि manifestation प्रक्रियांनी step-by-step मार्गदर्शन देतो — ज्यामुळे तुम्हाला results practical आणि sustainable वाटतील.</p>
+        </div>
+        <div class="card">
+          <p style="font-weight:600">कोणांसाठी योग्य?</p>
+          <p>ज्यांना stress kami karaycha आहे, relationship heal karaychi ahe, career/money clarity havi aahe — Marathi/Hindi बोलणाऱ्यांसाठी simple guide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE PILLARS -->
+  <section class="section" style="background:#f7fffb">
+    <div class="container">
+      <h2 class="section-title">Core pillars — काय शिकाल</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h4 style="margin:0 0 8px">Emotional Healing</h4>
+          <p class="muted">Ho'oponopono + EFT — जुने दुख सोडवा.</p>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Mindset Reprogramming</h4>
+          <p class="muted">NLP tools — विश्वास आणि ओळख बदला.</p>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Manifestation</h4>
+          <p class="muted">Visualization, Scripting, Daily practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">आपल्या समस्यांवर — Real problems we fix</h2>
+      <div class="grid-3">
+        <div class="card"><strong>Stress & Anxiety</strong><div style="color:var(--muted);margin-top:6px">Daily tension, sleep problems</div></div>
+        <div class="card"><strong>Money Blocks</strong><div style="color:var(--muted);margin-top:6px">Scarcity mindset, stuck finances</div></div>
+        <div class="card"><strong>Relationship Gaps</strong><div style="color:var(--muted);margin-top:6px">Communication & trust issues</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-DAY CURRICULUM -->
+  <section id="curriculum" class="section" style="background:#f7f9fd">
+    <div class="container">
+      <h2 class="section-title">5-Day Kickstart — Quick Curriculum</h2>
+      <div class="grid-3">
+        <div class="card"><strong>Day 1 — Foundation</strong><div style="color:var(--muted);margin-top:8px">Morning ritual, Ho'oponopono intro</div></div>
+        <div class="card"><strong>Day 2 — EFT Basics</strong><div style="color:var(--muted);margin-top:8px">Tapping for stress release</div></div>
+        <div class="card"><strong>Day 3 — Self-Love</strong><div style="color:var(--muted);margin-top:8px">Gratitude & confidence exercises</div></div>
+        <div class="card"><strong>Day 4 — Visualization</strong><div style="color:var(--muted);margin-top:8px">TFBA & guided visualization</div></div>
+        <div class="card"><strong>Day 5 — Integration</strong><div style="color:var(--muted);margin-top:8px">Action plan & voice guides</div></div>
+      </div>
+
+      <div style="text-align:center;margin-top:18px">
+        <a class="big-cta" href="https://wa.me/917021376340" target="_blank">Reserve Early Bird Spot — ₹699</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What people felt — अनुभव</h2>
+      <div class="grid-3">
+        <div class="testi">
+          <strong>“Session नंतर मन हलकं झालं.”</strong>
+          <div style="color:var(--muted);margin-top:8px">— A. Patil</div>
+        </div>
+        <div class="testi">
+          <strong>“EFT ने anxiety कमी झाली.”</strong>
+          <div style="color:var(--muted);margin-top:8px">— M. Kulkarni</div>
+        </div>
+        <div class="testi">
+          <strong>“मला खरंच ऐकणारा सापडला.”</strong>
+          <div style="color:var(--muted);margin-top:8px">— S. Deshmukh</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2 class="section-title">FAQ — सामान्य प्रश्न</h2>
+      <details open>
+        <summary>सत्र किती वेळांचे असतात?</summary>
+        <div style="margin-top:8px;color:var(--muted)">Daily 30–45 mins (short teaching + guided practice). Voice recordings दिल्या जातील.</div>
+      </details>
+      <details>
+        <summary>मला आधी अनुभव आवश्यक आहे का?</summary>
+        <div style="margin-top:8px;color:var(--muted)">नाही — beginner-friendly program आहे.</div>
+      </details>
+      <details>
+        <summary>Recordings आणि workbook मिळेल का?</summary>
+        <div style="margin-top:8px;color:var(--muted)">हो — सर्व सहभागीना voice guides आणि PDF workbook दिले जातील.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container" style="max-width:720px">
+      <h2 class="section-title">Reserve Free 15-min Clarity Call</h2>
+      <p style="color:var(--muted);text-align:center;margin-bottom:16px">नमूद करा तुमची माहिती — आम्ही लवकर संपर्क करू.</p>
+
+      <!-- Form (replace action with your email via formsubmit.co or use Netlify forms) -->
+      <form action="https://formsubmit.co/your-email@example.com" method="POST" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <input name="name" placeholder="तुमचं नाव | Your name" required style="padding:12px;border-radius:8px;border:1px solid #e6eef5">
+        <input name="phone" placeholder="Phone / WhatsApp (with +91)" required style="padding:12px;border-radius:8px;border:1px solid #e6eef5">
+        <input name="email" type="email" placeholder="Email" style="padding:12px;border-radius:8px;border:1px solid #e6eef5" required>
+        <select name="interest" style="padding:12px;border-radius:8px;border:1px solid #e6eef5" required>
+          <option value="">Choose program</option>
+          <option>5-Day Kickstart (₹999)</option>
+          <option>Advanced 1:1 Coaching</option>
+          <option>Workshop / Group</option>
+        </select>
+        <textarea name="message" placeholder="तुमचा संदेश | Your message" style="grid-column:1 / -1;padding:12px;border-radius:8px;border:1px solid #e6eef5"></textarea>
+        <div style="grid-column:1 / -1;text-align:center">
+          <button type="submit" class="btn-primary" style="border-radius:10px;padding:10px 18px">Submit — सबमिट करा</button>
+        </div>
+      </form>
+
+      <p style="text-align:center;color:var(--muted);margin-top:14px">किंवा थेट WhatsApp करा: <a href="https://wa.me/917021376340" target="_blank" style="color:var(--accent)">+91-7021376340</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mentor Bharat — Emotional Healer & Manifestation Guide • WhatsApp: <a href="https://wa.me/917021376340" style="color:#baf0d6">+91-7021376340</a> • Email: <a href="mailto:innerpower963@gmail.com" style="color:#baf0d6">innerpower963@gmail.com</a>
+  </footer>
+
+</body>
+</html>
